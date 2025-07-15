@@ -79,8 +79,10 @@ def validate_option(menu_title:str, options:list[str], question: str, error_mess
     '''
 
     print(menu_title)
+    print()
     for index, option in enumerate(options, start=1):
         print(f'[ {index} ] {option}')
+    print()
     while True:
         answer = validate_int(question, error_message)
         if 1 <= answer <= len(options):
